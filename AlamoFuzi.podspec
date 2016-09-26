@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
     s.dependency     "Fuzi", "~> 1.0"
     
     # Uncomment for linting
-    s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
+    # s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
 
 end
