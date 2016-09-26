@@ -18,5 +18,6 @@ before_install:
   - pod repo update
 
 script:
+  - instruments -s devices
   - set -o pipefail
   - xcodebuild -workspace "$XCWORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" -sdk $SDK build | xcpretty
