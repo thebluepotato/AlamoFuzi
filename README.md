@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/AlamoFuzi.svg?style=flat&color=gray)](http://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/cocoapods/p/AlamoFuzi.svg?style=flat)](http://thebluepotato.github.io/AlamoFuzi/)
 
-**XML/HTML response handlers for Alamofire using Fuzi** [[Documentation]](http://thebluepotato.github.io/AlamoFuzi/)
+**XML/HTML response handlers for Alamofire using Fuzi**
 
 AlamoFuzi adds `.responseXML()` and `.responseHTML()` response handlers to [Alamofire](https://github.com/Alamofire/Alamofire)'s `DataRequest` class. Both document types are serialized using [Fuzi](https://github.com/cezheng/Fuzi), the preferred way to parse XML/HTML in Swift.
 
@@ -22,7 +22,7 @@ AlamoFuzi adds `.responseXML()` and `.responseHTML()` response handlers to [Alam
 The easiest way to add AlamoFuzi to your project is to use CocoaPods.
 
 ### Using [CocoaPods](http://cocoapods.org/)
-You can use [CocoaPods](http://cocoapods.org/) to install `AlamoFuzi` by adding it to your to your `Podfile`:
+You can use [CocoaPods](http://cocoapods.org/) to install AlamoFuzi by adding it to your to your `Podfile`:
 
 ```ruby
 platform :ios, '9.0'
@@ -64,4 +64,4 @@ Alamofire.request("http://example.org/").responseHTML { response in
 
 ## License
 
-`AlamoFuzi` is released under the MIT license. See [LICENSE](LICENSE) for details.
+AlamoFuzi is released under the MIT license. See [LICENSE](LICENSE) for details.
