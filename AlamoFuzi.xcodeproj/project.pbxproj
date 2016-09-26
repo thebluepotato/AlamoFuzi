@@ -15,10 +15,10 @@
 /* Begin PBXFileReference section */
 		196B8D97DC24B4D17AC573F7 /* Pods-AlamoFuzi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi/Pods-AlamoFuzi.debug.xcconfig"; sourceTree = "<group>"; };
 		25FA01DAD2657D9E0EDA8510 /* Pods_AlamoFuzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamoFuzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		896395CC1D992BB700BAF923 /* AlamoFuzi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamoFuzi.swift; path = ../Sources/AlamoFuzi.swift; sourceTree = "<group>"; };
+		896395CC1D992BB700BAF923 /* AlamoFuzi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamoFuzi.swift; sourceTree = "<group>"; };
 		89EADA361D948DFD00D6D8CB /* AlamoFuzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamoFuzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		89EADA391D948DFD00D6D8CB /* AlamoFuzi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AlamoFuzi.h; path = ../Sources/AlamoFuzi.h; sourceTree = "<group>"; };
-		89EADA3A1D948DFD00D6D8CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Sources/Info.plist; sourceTree = "<group>"; };
+		89EADA391D948DFD00D6D8CB /* AlamoFuzi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlamoFuzi.h; sourceTree = "<group>"; };
+		89EADA3A1D948DFD00D6D8CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA5BABCE36CF5AA6A41C9E95 /* Pods-AlamoFuzi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi/Pods-AlamoFuzi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,8 +76,7 @@
 				89EADA3A1D948DFD00D6D8CB /* Info.plist */,
 				896395CC1D992BB700BAF923 /* AlamoFuzi.swift */,
 			);
-			name = Sources;
-			path = AlamoFuzi;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +219,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -273,6 +273,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -311,7 +312,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AlamoFuzi/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -333,7 +334,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AlamoFuzi/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

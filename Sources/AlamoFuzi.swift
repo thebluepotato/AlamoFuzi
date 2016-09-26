@@ -26,32 +26,40 @@ import Foundation
 import Alamofire
 import Fuzi
 
-// MARK: - Request for Fuzi HTML
+// MARK: - Fuzi HTML
 
 extension DataRequest {
     
+    /// Creates a response serializer that returns a result HTML document type initialized from the response data
+    ///
+    /// - returns: An HTML document response serializer
     static func htmlResponseSerializer() -> DataResponseSerializer<HTMLDocument> {
         return DataResponseSerializer { request, response, data, error in
             // Pass through any underlying URLSession error to the .network case.
-            guard error == nil else { return .failure(BackendError.network(error: error!)) }
+            guard error == nil else { return .failure(AlamoFuziError.network(error: error!)) }
             
             // Use Alamofire's existing data serializer to extract the data, passing the error as nil, as it has
             // already been handled.
             let result = Request.serializeResponseData(response: response, data: data, error: nil)
             
             guard case let .success(validData) = result else {
-                return .failure(BackendError.dataSerialization(error: result.error! as! AFError))
+                return .failure(AlamoFuziError.dataSerialization(error: result.error! as! AFError))
             }
             
             do {
                 let html = try HTMLDocument(data: validData)
                 return .success(html)
             } catch {
-                return .failure(BackendError.htmlSerialization(error: error as! XMLError))
+                return .failure(AlamoFuziError.htmlSerialization(error: error as! XMLError))
             }
         }
     }
     
+    /// Adds a handler to be called once the request has finished.
+    ///
+    /// - parameter completionHandler: A closure to be executed once the request has finished.
+    ///
+    /// - returns: The request.
     @discardableResult
     public func responseHTML(
         queue: DispatchQueue? = nil,
@@ -66,32 +74,40 @@ extension DataRequest {
     }
 }
 
-// MARK: - Request for Fuzi XML
+// MARK: - Fuzi XML
 
 extension DataRequest {
     
+    /// Creates a response serializer that returns a result XML document type initialized from the response data
+    ///
+    /// - returns: An XML document response serializer
     static func xmlResponseSerializer() -> DataResponseSerializer<Fuzi.XMLDocument> {
         return DataResponseSerializer { request, response, data, error in
             // Pass through any underlying URLSession error to the .network case.
-            guard error == nil else { return .failure(BackendError.network(error: error!)) }
+            guard error == nil else { return .failure(AlamoFuziError.network(error: error!)) }
             
             // Use Alamofire's existing data serializer to extract the data, passing the error as nil, as it has
             // already been handled.
             let result = Request.serializeResponseData(response: response, data: data, error: nil)
             
             guard case let .success(validData) = result else {
-                return .failure(BackendError.dataSerialization(error: result.error! as! AFError))
+                return .failure(AlamoFuziError.dataSerialization(error: result.error! as! AFError))
             }
             
             do {
                 let xml = try XMLDocument(data: validData)
                 return .success(xml)
             } catch {
-                return .failure(BackendError.xmlSerialization(error: error as! XMLError))
+                return .failure(AlamoFuziError.xmlSerialization(error: error as! XMLError))
             }
         }
     }
     
+    /// Adds a handler to be called once the request has finished.
+    ///
+    /// - parameter completionHandler: A closure to be executed once the request has finished.
+    ///
+    /// - returns: The request.
     @discardableResult
     public func responseXML(
         queue: DispatchQueue? = nil,
@@ -106,8 +122,15 @@ extension DataRequest {
     }
 }
 
-enum BackendError: Error {
-    case network(error: Error) // Capture any underlying Error from the URLSession API
+
+/// `AlamoFuziError` is the error type returned by AlamoFuzi. It encompasses a few different types of errors.
+///
+/// - network:            Captures any underlying Error from the URLSession API
+/// - dataSerialization:  Captures any Error occuring during the serialization of the response Data
+/// - xmlSerialization:   Captures any Error happening during the serialization of the response XML
+/// - htmlSerialization:  Captures any Error happening during the serialization of the response HTML
+enum AlamoFuziError: Error {
+    case network(error: Error)
     case dataSerialization(error: Error)
     case xmlSerialization(error: Error)
     case htmlSerialization(error: Error)
