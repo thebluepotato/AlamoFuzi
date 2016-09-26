@@ -1,0 +1,6 @@
+framework module Pods_AlamoFuzi {
+  umbrella header "Pods-AlamoFuzi-umbrella.h"
+
+  export *
+  module * { export * }
+}
