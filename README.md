@@ -1,2 +1,2 @@
-# SwiftMarshal
-Simply Ruby's Marshal in Swift
+# AlamoFuzi
+Adding support for Fuzi to Alamofire
