@@ -1,12 +1,29 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+use_frameworks!
 
-target 'AlamoFuzi' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+target 'AlamoFuzi.iOS' do
+    platform :ios, '9.0'
+    
+    pod 'Alamofire', '~> 4.0'
+    pod 'Fuzi', '~> 1.0'
+end
 
-  # Pods for AlamoFuzi
-  pod 'Alamofire', '~> 4.0'
-  pod 'Fuzi', '~> 1.0'
+target 'AlamoFuzi.macOS' do
+    platform :osx, '10.11'
+    
+    pod 'Alamofire', '~> 4.0'
+    pod 'Fuzi', '~> 1.0'
+end
 
+target 'AlamoFuzi.watchOS' do
+    platform :watchos, '2.0'
+    
+    pod 'Alamofire', '~> 4.0'
+    pod 'Fuzi', '~> 1.0'
+end
+
+target 'AlamoFuzi.tvOS' do
+    platform :tvos, '9.0'
+    
+    pod 'Alamofire', '~> 4.0'
+    pod 'Fuzi', '~> 1.0'
 end
