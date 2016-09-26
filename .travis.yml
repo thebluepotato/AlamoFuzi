@@ -8,14 +8,17 @@ env:
     - XCWORKSPACE="AlamoFuzi.xcworkspace"
     - SCHEME="AlamoFuzi"
   matrix:
-    - DESTINATION="platform=macOS,arch=x86_64" SDK="macosx" ACTION="build"
-    - DESTINATION="platform=iOS Simulator,name=iPhone 7" SDK="iphonesimulator" ACTION="build"
+    - DESTINATION="platform=macOS,arch=x86_64" SDK="macosx10.12" ACTION="build"
+    - DESTINATION="platform=iOS Simulator,name=iPhone 7" SDK="iphonesimulator10.0" ACTION="build"
     - DESTINATION="platform=tvOS Simulator,name=Apple TV 1080p" SDK="appletvsimulator" ACTION="build"
     - DESTINATION="name=Apple Watch - 38mm" SDK="watchsimulator" ACTION="build"
 
 before_install:
-  - pod repo update
+  - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
 
 script:
-  - xcodebuild --list
-  - xcodebuild -workspace "$XCWORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" -sdk $SDK $ACTION
+  - set -o pipefail
+  - xcodebuild -version
+  - xcodebuild -showsdks
+  - xcodebuild -list
+  - xcodebuild -workspace "$XCWORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" -sdk $SDK $ACTION | xcpretty
