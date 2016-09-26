@@ -13,5 +13,8 @@ env:
     - DESTINATION="platform=tvOS Simulator,name=Apple TV 1080p" SDK="appletvsimulator" ACTION="test"
     - DESTINATION="name=Apple Watch - 38mm" SDK="watchsimulator" ACTION="build"
 
+before_install:
+  - pod repo update
+
 script:
   - xcodebuild -workspace "$XCWORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" -sdk $SDK $ACTION
