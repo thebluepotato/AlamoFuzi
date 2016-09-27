@@ -9,7 +9,7 @@ env:
     - XCWORKSPACE="AlamoFuzi.xcworkspace"
   matrix:
     - DESTINATION="arch=x86_64"                    SDK="macosx10.12"          SCHEME="AlamoFuzi.macOS"
-    - DESTINATION="OS=10.0,name=iPhone 7 Plus"     SDK="iphonesimulator10.0"  SCHEME="AlamoFuzi.iOS"
+    - DESTINATION="OS=10.0,name=iPhone 7 Plus"     SDK="iphonesimulator10.0"  SCHEME="AlamoFuzi.iOS"     POD_LINT="YES"
     - DESTINATION="OS=10.0,name=Apple TV 1080p"    SDK="appletvsimulator10.0" SCHEME="AlamoFuzi.tvOS"
     - DESTINATION="OS=2.0,name=Apple Watch - 42mm" SDK="watchsimulator3.0"    SCHEME="AlamoFuzi.watchOS"
 
@@ -22,6 +22,8 @@ before_install:
   - xcodebuild -showsdks
 
 script:
-  - instruments -s devices
   - set -o pipefail
   - xcodebuild -workspace "$XCWORKSPACE" -scheme "$SCHEME" -sdk $SDK build | xcpretty
+  - if [ $POD_LINT == "YES" ]; then
+      pod lib lint;
+    fi
