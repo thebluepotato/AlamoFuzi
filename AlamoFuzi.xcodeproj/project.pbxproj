@@ -654,6 +654,7 @@
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchos watchsimulator macosx appletvos appletvsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -705,6 +706,7 @@
 				PRODUCT_NAME = AlamoFuzi;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchos watchsimulator macosx appletvos appletvsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
