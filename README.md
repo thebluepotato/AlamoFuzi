@@ -61,6 +61,8 @@ Alamofire.request("http://example.org/").responseHTML { response in
 }
 ```
 
+Please note that you need `import Alamofire` or `import Fuzi` if you're using any of their types or classes explicitly. In the example above, we do not explicitly use any types defined by Fuzi (e.g. `HTMLDocument`) so we don't have to import it separately.
+
 [Full documentation here](http://thebluepotato.github.io/AlamoFuzi)
 
 ## License
