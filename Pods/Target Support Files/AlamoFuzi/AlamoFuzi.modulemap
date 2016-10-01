@@ -1,0 +1,6 @@
+framework module AlamoFuzi {
+  umbrella header "AlamoFuzi-umbrella.h"
+
+  export *
+  module * { export * }
+}

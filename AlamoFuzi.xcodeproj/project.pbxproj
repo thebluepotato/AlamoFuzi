@@ -17,12 +17,15 @@
 		896396181D99C9D500BAF923 /* AlamoFuzi.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EADA391D948DFD00D6D8CB /* AlamoFuzi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		896396231D99C9FF00BAF923 /* AlamoFuzi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896395CC1D992BB700BAF923 /* AlamoFuzi.swift */; };
 		896396271D99C9FF00BAF923 /* AlamoFuzi.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EADA391D948DFD00D6D8CB /* AlamoFuzi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		899A270C1D9FF27500CF20C9 /* AlamoFuziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899A270B1D9FF27500CF20C9 /* AlamoFuziTests.swift */; };
 		89EADA3B1D948DFD00D6D8CB /* AlamoFuzi.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EADA391D948DFD00D6D8CB /* AlamoFuzi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FF09E347C4FCD844FAB6C28 /* Pods_AlamoFuzi_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F04E1E167F79938B6EA53BC /* Pods_AlamoFuzi_tvOS.framework */; };
+		E1CE14E0FCD43B9ADA76DBFC /* Pods_AlamoFuziTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23C6EBF362241596EA29A5C /* Pods_AlamoFuziTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0CC0FF27168B2D741C162640 /* Pods-AlamoFuzi-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi-tvOS/Pods-AlamoFuzi-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		4BF2AF582974A1669CA54210 /* Pods-AlamoFuziTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuziTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuziTests/Pods-AlamoFuziTests.release.xcconfig"; sourceTree = "<group>"; };
 		4D084A0F68FAA83F0CD083FE /* Pods_AlamoFuzi_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamoFuzi_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E879FC38F710FE6FE193160 /* Pods-AlamoFuzi-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi-iOS/Pods-AlamoFuzi-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		61542943B8E339372403323E /* Pods-AlamoFuzi-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi-watchOS/Pods-AlamoFuzi-watchOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -35,12 +38,17 @@
 		8963960F1D99C98200BAF923 /* AlamoFuzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamoFuzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8963961E1D99C9D500BAF923 /* AlamoFuzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamoFuzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8963962D1D99C9FF00BAF923 /* AlamoFuzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamoFuzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		899A27091D9FF27500CF20C9 /* AlamoFuziTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamoFuziTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		899A270B1D9FF27500CF20C9 /* AlamoFuziTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoFuziTests.swift; sourceTree = "<group>"; };
+		899A270D1D9FF27500CF20C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89EADA361D948DFD00D6D8CB /* AlamoFuzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamoFuzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89EADA391D948DFD00D6D8CB /* AlamoFuzi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlamoFuzi.h; sourceTree = "<group>"; };
 		89EADA3A1D948DFD00D6D8CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C88BFBC148424B456C338C4B /* Pods-AlamoFuzi-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi-iOS/Pods-AlamoFuzi-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E23C6EBF362241596EA29A5C /* Pods_AlamoFuziTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamoFuziTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B9812642EA7329607338C6 /* Pods-AlamoFuzi-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi-OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi-OSX/Pods-AlamoFuzi-OSX.release.xcconfig"; sourceTree = "<group>"; };
 		E84E2AFA7D9CD4B79E5E8938 /* Pods_AlamoFuzi_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamoFuzi_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3EA93F44005C82859DE317B /* Pods-AlamoFuziTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuziTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuziTests/Pods-AlamoFuziTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		899A27061D9FF27500CF20C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CE14E0FCD43B9ADA76DBFC /* Pods_AlamoFuziTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89EADA321D948DFD00D6D8CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,14 +106,26 @@
 				0CC0FF27168B2D741C162640 /* Pods-AlamoFuzi-tvOS.release.xcconfig */,
 				63392979E6C72C26FC750C88 /* Pods-AlamoFuzi-watchOS.debug.xcconfig */,
 				61542943B8E339372403323E /* Pods-AlamoFuzi-watchOS.release.xcconfig */,
+				F3EA93F44005C82859DE317B /* Pods-AlamoFuziTests.debug.xcconfig */,
+				4BF2AF582974A1669CA54210 /* Pods-AlamoFuziTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		899A270A1D9FF27500CF20C9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				899A270B1D9FF27500CF20C9 /* AlamoFuziTests.swift */,
+				899A270D1D9FF27500CF20C9 /* Info.plist */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		89EADA2C1D948DFD00D6D8CB = {
 			isa = PBXGroup;
 			children = (
 				89EADA381D948DFD00D6D8CB /* Sources */,
+				899A270A1D9FF27500CF20C9 /* Tests */,
 				89EADA371D948DFD00D6D8CB /* Products */,
 				4071A746D9AA457E1E927151 /* Pods */,
 				CA05FF78025579274A7D65DF /* Frameworks */,
@@ -111,6 +139,7 @@
 				8963960F1D99C98200BAF923 /* AlamoFuzi.framework */,
 				8963961E1D99C9D500BAF923 /* AlamoFuzi.framework */,
 				8963962D1D99C9FF00BAF923 /* AlamoFuzi.framework */,
+				899A27091D9FF27500CF20C9 /* AlamoFuziTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +161,7 @@
 				7F04E1E167F79938B6EA53BC /* Pods_AlamoFuzi_tvOS.framework */,
 				83CA3D91200939E43BEBCBE6 /* Pods_AlamoFuzi_watchOS.framework */,
 				E84E2AFA7D9CD4B79E5E8938 /* Pods_AlamoFuzi_OSX.framework */,
+				E23C6EBF362241596EA29A5C /* Pods_AlamoFuziTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -234,6 +264,26 @@
 			productReference = 8963962D1D99C9FF00BAF923 /* AlamoFuzi.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		899A27081D9FF27500CF20C9 /* AlamoFuziTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 899A27101D9FF27500CF20C9 /* Build configuration list for PBXNativeTarget "AlamoFuziTests" */;
+			buildPhases = (
+				9CB9EF3A7E11A4416A47B596 /* [CP] Check Pods Manifest.lock */,
+				899A27051D9FF27500CF20C9 /* Sources */,
+				899A27061D9FF27500CF20C9 /* Frameworks */,
+				899A27071D9FF27500CF20C9 /* Resources */,
+				95A9F0D21A04E229DD775979 /* [CP] Embed Pods Frameworks */,
+				C8F1B3DA891157333DBF598E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlamoFuziTests;
+			productName = AlamoFuziTests;
+			productReference = 899A27091D9FF27500CF20C9 /* AlamoFuziTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		89EADA351D948DFD00D6D8CB /* AlamoFuzi-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89EADA3E1D948DFD00D6D8CB /* Build configuration list for PBXNativeTarget "AlamoFuzi-iOS" */;
@@ -260,9 +310,14 @@
 		89EADA2D1D948DFD00D6D8CB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Jonas Zaugg";
 				TargetAttributes = {
+					899A27081D9FF27500CF20C9 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+					};
 					89EADA351D948DFD00D6D8CB = {
 						CreatedOnToolsVersion = 8.0;
 						LastSwiftMigration = 0800;
@@ -286,6 +341,7 @@
 				896396021D99C98200BAF923 /* AlamoFuzi-OSX */,
 				896396111D99C9D500BAF923 /* AlamoFuzi-watchOS */,
 				896396201D99C9FF00BAF923 /* AlamoFuzi-tvOS */,
+				899A27081D9FF27500CF20C9 /* AlamoFuziTests */,
 			);
 		};
 /* End PBXProject section */
@@ -306,6 +362,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		896396281D99C9FF00BAF923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		899A27071D9FF27500CF20C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -427,6 +490,51 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlamoFuzi-tvOS/Pods-AlamoFuzi-tvOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		95A9F0D21A04E229DD775979 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlamoFuziTests/Pods-AlamoFuziTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CB9EF3A7E11A4416A47B596 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8F1B3DA891157333DBF598E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlamoFuziTests/Pods-AlamoFuziTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FE90083A7537BC5A9CB386C1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -466,6 +574,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				896396231D99C9FF00BAF923 /* AlamoFuzi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		899A27051D9FF27500CF20C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				899A270C1D9FF27500CF20C9 /* AlamoFuziTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +715,34 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joza.AlamoFuzi;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		899A270E1D9FF27500CF20C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3EA93F44005C82859DE317B /* Pods-AlamoFuziTests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joza.AlamoFuziTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		899A270F1D9FF27500CF20C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BF2AF582974A1669CA54210 /* Pods-AlamoFuziTests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joza.AlamoFuziTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -785,6 +929,15 @@
 			buildConfigurations = (
 				8963962B1D99C9FF00BAF923 /* Debug */,
 				8963962C1D99C9FF00BAF923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		899A27101D9FF27500CF20C9 /* Build configuration list for PBXNativeTarget "AlamoFuziTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				899A270E1D9FF27500CF20C9 /* Debug */,
+				899A270F1D9FF27500CF20C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

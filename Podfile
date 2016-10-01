@@ -27,3 +27,9 @@ target 'AlamoFuzi-tvOS' do
     pod 'Alamofire', '~> 4.0'
     pod 'Fuzi', '~> 1.0'
 end
+
+target 'AlamoFuziTests' do
+    platform :ios, '9.0'
+    
+    pod 'AlamoFuzi', '~> 1.0'
+end

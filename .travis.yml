@@ -6,10 +6,10 @@ osx_image: xcode8
 
 env:
   global:
-    - XCWORKSPACE="AlamoFuzi.xcworkspace"
+    - WORKSPACE="AlamoFuzi.xcworkspace"
   matrix:
     - DESTINATION="arch=x86_64"                    SDK="macosx10.12"          SCHEME="AlamoFuzi-OSX"
-    - DESTINATION="OS=10.0,name=iPhone 7 Plus"     SDK="iphonesimulator10.0"  SCHEME="AlamoFuzi-iOS"     POD_LINT="YES"
+    - DESTINATION="OS=10.0,name=iPhone 7 Plus"     SDK="iphonesimulator10.0"  SCHEME="AlamoFuzi-iOS"     POD_LINT="YES"   RUN_TESTS="YES"
     - DESTINATION="OS=10.0,name=Apple TV 1080p"    SDK="appletvsimulator10.0" SCHEME="AlamoFuzi-tvOS"
     - DESTINATION="OS=2.0,name=Apple Watch - 42mm" SDK="watchsimulator3.0"    SCHEME="AlamoFuzi-watchOS"
 
@@ -23,7 +23,11 @@ before_install:
 
 script:
   - set -o pipefail
-  - xcodebuild -workspace "$XCWORKSPACE" -scheme "$SCHEME" -sdk $SDK build | xcpretty
+  - if [ $RUN_TESTS == "YES" ]; then
+      xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" ENABLE_TESTABILITY=YES test | xcpretty;
+    else
+      xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" build | xcpretty;
+    fi
   - if [ $POD_LINT == "YES" ]; then
       pod lib lint;
     fi
