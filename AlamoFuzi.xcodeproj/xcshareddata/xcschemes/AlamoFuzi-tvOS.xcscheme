@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "896396021D99C98200BAF923"
+               BlueprintIdentifier = "896396201D99C9FF00BAF923"
                BuildableName = "AlamoFuzi.framework"
-               BlueprintName = "AlamoFuzi.macOS"
+               BlueprintName = "AlamoFuzi-tvOS"
                ReferencedContainer = "container:AlamoFuzi.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "896396021D99C98200BAF923"
+            BlueprintIdentifier = "896396201D99C9FF00BAF923"
             BuildableName = "AlamoFuzi.framework"
-            BlueprintName = "AlamoFuzi.macOS"
+            BlueprintName = "AlamoFuzi-tvOS"
             ReferencedContainer = "container:AlamoFuzi.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "896396021D99C98200BAF923"
+            BlueprintIdentifier = "896396201D99C9FF00BAF923"
             BuildableName = "AlamoFuzi.framework"
-            BlueprintName = "AlamoFuzi.macOS"
+            BlueprintName = "AlamoFuzi-tvOS"
             ReferencedContainer = "container:AlamoFuzi.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

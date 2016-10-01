@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "896396111D99C9D500BAF923"
+               BlueprintIdentifier = "896396021D99C98200BAF923"
                BuildableName = "AlamoFuzi.framework"
-               BlueprintName = "AlamoFuzi.watchOS"
+               BlueprintName = "AlamoFuzi-OSX"
                ReferencedContainer = "container:AlamoFuzi.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "896396111D99C9D500BAF923"
+            BlueprintIdentifier = "896396021D99C98200BAF923"
             BuildableName = "AlamoFuzi.framework"
-            BlueprintName = "AlamoFuzi.watchOS"
+            BlueprintName = "AlamoFuzi-OSX"
             ReferencedContainer = "container:AlamoFuzi.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "896396111D99C9D500BAF923"
+            BlueprintIdentifier = "896396021D99C98200BAF923"
             BuildableName = "AlamoFuzi.framework"
-            BlueprintName = "AlamoFuzi.watchOS"
+            BlueprintName = "AlamoFuzi-OSX"
             ReferencedContainer = "container:AlamoFuzi.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "89EADA351D948DFD00D6D8CB"
                BuildableName = "AlamoFuzi.framework"
-               BlueprintName = "AlamoFuzi.iOS"
+               BlueprintName = "AlamoFuzi-iOS"
                ReferencedContainer = "container:AlamoFuzi.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,7 +47,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "89EADA351D948DFD00D6D8CB"
             BuildableName = "AlamoFuzi.framework"
-            BlueprintName = "AlamoFuzi.iOS"
+            BlueprintName = "AlamoFuzi-iOS"
             ReferencedContainer = "container:AlamoFuzi.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,7 +65,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "89EADA351D948DFD00D6D8CB"
             BuildableName = "AlamoFuzi.framework"
-            BlueprintName = "AlamoFuzi.iOS"
+            BlueprintName = "AlamoFuzi-iOS"
             ReferencedContainer = "container:AlamoFuzi.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
