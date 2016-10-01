@@ -43,3 +43,6 @@ Carthage/Build
 
 # As long as Fuzi doesn’t support SwiftPM
 Package.swift
+
+# Docs (on GH-Pages)
+docs/
