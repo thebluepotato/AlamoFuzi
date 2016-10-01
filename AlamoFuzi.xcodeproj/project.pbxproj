@@ -97,7 +97,7 @@
 		89EADA2C1D948DFD00D6D8CB = {
 			isa = PBXGroup;
 			children = (
-				89EADA381D948DFD00D6D8CB /* Source */,
+				89EADA381D948DFD00D6D8CB /* Sources */,
 				89EADA371D948DFD00D6D8CB /* Products */,
 				4071A746D9AA457E1E927151 /* Pods */,
 				CA05FF78025579274A7D65DF /* Frameworks */,
@@ -115,14 +115,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		89EADA381D948DFD00D6D8CB /* Source */ = {
+		89EADA381D948DFD00D6D8CB /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				89EADA391D948DFD00D6D8CB /* AlamoFuzi.h */,
 				89EADA3A1D948DFD00D6D8CB /* Info.plist */,
 				896395CC1D992BB700BAF923 /* AlamoFuzi.swift */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		CA05FF78025579274A7D65DF /* Frameworks */ = {
