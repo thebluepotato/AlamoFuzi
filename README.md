@@ -61,6 +61,7 @@ Alamofire.request("http://example.org/").responseHTML { response in
 }
 ```
 
+[Full documentation here](http://thebluepotato.github.io/AlamoFuzi)
 
 ## License
 
