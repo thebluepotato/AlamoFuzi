@@ -97,7 +97,7 @@
 		89EADA2C1D948DFD00D6D8CB = {
 			isa = PBXGroup;
 			children = (
-				89EADA381D948DFD00D6D8CB /* Sources */,
+				89EADA381D948DFD00D6D8CB /* Source */,
 				89EADA371D948DFD00D6D8CB /* Products */,
 				4071A746D9AA457E1E927151 /* Pods */,
 				CA05FF78025579274A7D65DF /* Frameworks */,
@@ -115,14 +115,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		89EADA381D948DFD00D6D8CB /* Sources */ = {
+		89EADA381D948DFD00D6D8CB /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				89EADA391D948DFD00D6D8CB /* AlamoFuzi.h */,
 				89EADA3A1D948DFD00D6D8CB /* Info.plist */,
 				896395CC1D992BB700BAF923 /* AlamoFuzi.swift */,
 			);
-			path = Sources;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		CA05FF78025579274A7D65DF /* Frameworks */ = {
@@ -174,9 +174,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		896396021D99C98200BAF923 /* AlamoFuzi.macOS */ = {
+		896396021D99C98200BAF923 /* AlamoFuzi-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8963960C1D99C98200BAF923 /* Build configuration list for PBXNativeTarget "AlamoFuzi.macOS" */;
+			buildConfigurationList = 8963960C1D99C98200BAF923 /* Build configuration list for PBXNativeTarget "AlamoFuzi-OSX" */;
 			buildPhases = (
 				896396031D99C98200BAF923 /* [CP] Check Pods Manifest.lock */,
 				896396041D99C98200BAF923 /* Sources */,
@@ -189,14 +189,14 @@
 			);
 			dependencies = (
 			);
-			name = AlamoFuzi.macOS;
+			name = "AlamoFuzi-OSX";
 			productName = AlamoFuzi;
 			productReference = 8963960F1D99C98200BAF923 /* AlamoFuzi.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		896396111D99C9D500BAF923 /* AlamoFuzi.watchOS */ = {
+		896396111D99C9D500BAF923 /* AlamoFuzi-watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8963961B1D99C9D500BAF923 /* Build configuration list for PBXNativeTarget "AlamoFuzi.watchOS" */;
+			buildConfigurationList = 8963961B1D99C9D500BAF923 /* Build configuration list for PBXNativeTarget "AlamoFuzi-watchOS" */;
 			buildPhases = (
 				896396121D99C9D500BAF923 /* [CP] Check Pods Manifest.lock */,
 				896396131D99C9D500BAF923 /* Sources */,
@@ -209,14 +209,14 @@
 			);
 			dependencies = (
 			);
-			name = AlamoFuzi.watchOS;
+			name = "AlamoFuzi-watchOS";
 			productName = AlamoFuzi;
 			productReference = 8963961E1D99C9D500BAF923 /* AlamoFuzi.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		896396201D99C9FF00BAF923 /* AlamoFuzi.tvOS */ = {
+		896396201D99C9FF00BAF923 /* AlamoFuzi-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8963962A1D99C9FF00BAF923 /* Build configuration list for PBXNativeTarget "AlamoFuzi.tvOS" */;
+			buildConfigurationList = 8963962A1D99C9FF00BAF923 /* Build configuration list for PBXNativeTarget "AlamoFuzi-tvOS" */;
 			buildPhases = (
 				896396211D99C9FF00BAF923 /* [CP] Check Pods Manifest.lock */,
 				896396221D99C9FF00BAF923 /* Sources */,
@@ -229,14 +229,14 @@
 			);
 			dependencies = (
 			);
-			name = AlamoFuzi.tvOS;
+			name = "AlamoFuzi-tvOS";
 			productName = AlamoFuzi;
 			productReference = 8963962D1D99C9FF00BAF923 /* AlamoFuzi.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		89EADA351D948DFD00D6D8CB /* AlamoFuzi.iOS */ = {
+		89EADA351D948DFD00D6D8CB /* AlamoFuzi-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 89EADA3E1D948DFD00D6D8CB /* Build configuration list for PBXNativeTarget "AlamoFuzi.iOS" */;
+			buildConfigurationList = 89EADA3E1D948DFD00D6D8CB /* Build configuration list for PBXNativeTarget "AlamoFuzi-iOS" */;
 			buildPhases = (
 				FE90083A7537BC5A9CB386C1 /* [CP] Check Pods Manifest.lock */,
 				89EADA311D948DFD00D6D8CB /* Sources */,
@@ -249,7 +249,7 @@
 			);
 			dependencies = (
 			);
-			name = AlamoFuzi.iOS;
+			name = "AlamoFuzi-iOS";
 			productName = AlamoFuzi;
 			productReference = 89EADA361D948DFD00D6D8CB /* AlamoFuzi.framework */;
 			productType = "com.apple.product-type.framework";
@@ -282,10 +282,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				89EADA351D948DFD00D6D8CB /* AlamoFuzi.iOS */,
-				896396021D99C98200BAF923 /* AlamoFuzi.macOS */,
-				896396111D99C9D500BAF923 /* AlamoFuzi.watchOS */,
-				896396201D99C9FF00BAF923 /* AlamoFuzi.tvOS */,
+				89EADA351D948DFD00D6D8CB /* AlamoFuzi-iOS */,
+				896396021D99C98200BAF923 /* AlamoFuzi-OSX */,
+				896396111D99C9D500BAF923 /* AlamoFuzi-watchOS */,
+				896396201D99C9FF00BAF923 /* AlamoFuzi-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -762,7 +762,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8963960C1D99C98200BAF923 /* Build configuration list for PBXNativeTarget "AlamoFuzi.macOS" */ = {
+		8963960C1D99C98200BAF923 /* Build configuration list for PBXNativeTarget "AlamoFuzi-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8963960D1D99C98200BAF923 /* Debug */,
@@ -771,7 +771,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8963961B1D99C9D500BAF923 /* Build configuration list for PBXNativeTarget "AlamoFuzi.watchOS" */ = {
+		8963961B1D99C9D500BAF923 /* Build configuration list for PBXNativeTarget "AlamoFuzi-watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8963961C1D99C9D500BAF923 /* Debug */,
@@ -780,7 +780,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8963962A1D99C9FF00BAF923 /* Build configuration list for PBXNativeTarget "AlamoFuzi.tvOS" */ = {
+		8963962A1D99C9FF00BAF923 /* Build configuration list for PBXNativeTarget "AlamoFuzi-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8963962B1D99C9FF00BAF923 /* Debug */,
@@ -798,7 +798,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		89EADA3E1D948DFD00D6D8CB /* Build configuration list for PBXNativeTarget "AlamoFuzi.iOS" */ = {
+		89EADA3E1D948DFD00D6D8CB /* Build configuration list for PBXNativeTarget "AlamoFuzi-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				89EADA3F1D948DFD00D6D8CB /* Debug */,
