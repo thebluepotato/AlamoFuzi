@@ -23,7 +23,7 @@ before_install:
 
 script:
   - set -o pipefail
-  - xcodebuild -workspace "$XCWORKSPACE" -scheme "$SCHEME" -sdk $SDK clean build | xcpretty
+  - xcodebuild -workspace "$XCWORKSPACE" -scheme "$SCHEME" -sdk $SDK build | xcpretty
   - if [ $POD_LINT == "YES" ]; then
       pod lib lint;
     fi
