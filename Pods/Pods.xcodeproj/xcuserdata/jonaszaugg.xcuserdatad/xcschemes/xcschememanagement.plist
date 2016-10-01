@@ -44,22 +44,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AlamoFuzi.iOS.xcscheme</key>
+		<key>Pods-AlamoFuzi-OSX.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AlamoFuzi.macOS.xcscheme</key>
+		<key>Pods-AlamoFuzi-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AlamoFuzi.tvOS.xcscheme</key>
+		<key>Pods-AlamoFuzi-tvOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AlamoFuzi.watchOS.xcscheme</key>
+		<key>Pods-AlamoFuzi-watchOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -77,17 +77,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>23DB614C92A44DBB6C723314978C235B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>39398112EEF05604210D51C11148472A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4926B9784432B8B4FB9F4A989292815F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,17 +87,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>49FF163CC4DF804DB3FA125AC7585C28</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>52CB805313B3A9D14677D0E38CC169E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6ABE7777EF454D85183B356569E7A579</key>
+		<key>7A52A8E7F25AE6A46ACD071EFCD9FA85</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7A52A8E7F25AE6A46ACD071EFCD9FA85</key>
+		<key>7BDF9D2C2F51585717DA2B2156C49ABB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8315C8A53A03C511DEE660894C86559A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,7 +122,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F660B67B2B445036A7F1F1A5854157FD</key>
+		<key>CFADFB45AC8D847328C8C358A7258920</key>
 		<dict>
 			<key>primary</key>
 			<true/>

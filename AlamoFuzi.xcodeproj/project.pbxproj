@@ -10,6 +10,7 @@
 		012AEEC5B6F5DF0AE0B0602A /* Pods_AlamoFuzi_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D084A0F68FAA83F0CD083FE /* Pods_AlamoFuzi_iOS.framework */; };
 		2006EAFC94518E417BB4CECC /* Pods_AlamoFuzi_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CA3D91200939E43BEBCBE6 /* Pods_AlamoFuzi_watchOS.framework */; };
 		34A13450DD2D7ADF1DE6997F /* Pods_AlamoFuzi_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E90DC9EC65F9966AA1FAAD2 /* Pods_AlamoFuzi_macOS.framework */; };
+		41262B48EAA53FD3A3DAF230 /* Pods_AlamoFuzi_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E84E2AFA7D9CD4B79E5E8938 /* Pods_AlamoFuzi_OSX.framework */; };
 		896395CD1D992BB700BAF923 /* AlamoFuzi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896395CC1D992BB700BAF923 /* AlamoFuzi.swift */; };
 		896396051D99C98200BAF923 /* AlamoFuzi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896395CC1D992BB700BAF923 /* AlamoFuzi.swift */; };
 		896396091D99C98200BAF923 /* AlamoFuzi.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EADA391D948DFD00D6D8CB /* AlamoFuzi.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -22,15 +23,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0215AFCD35D87169A3087FB9 /* Pods-AlamoFuzi.macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi.macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi.macOS/Pods-AlamoFuzi.macOS.release.xcconfig"; sourceTree = "<group>"; };
-		206E7BDBA9ACFFD607AF0B63 /* Pods-AlamoFuzi.iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi.iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi.iOS/Pods-AlamoFuzi.iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		24BB5C36E18D9354D2E3542B /* Pods-AlamoFuzi.watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi.watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi.watchOS/Pods-AlamoFuzi.watchOS.debug.xcconfig"; sourceTree = "<group>"; };
-		3FB59CD2209E337250613B6F /* Pods-AlamoFuzi.watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi.watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi.watchOS/Pods-AlamoFuzi.watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		0CC0FF27168B2D741C162640 /* Pods-AlamoFuzi-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi-tvOS/Pods-AlamoFuzi-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		4D084A0F68FAA83F0CD083FE /* Pods_AlamoFuzi_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamoFuzi_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E879FC38F710FE6FE193160 /* Pods-AlamoFuzi-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi-iOS/Pods-AlamoFuzi-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		5E90DC9EC65F9966AA1FAAD2 /* Pods_AlamoFuzi_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamoFuzi_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E99160D0F493A78EFC5C566 /* Pods-AlamoFuzi.tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi.tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi.tvOS/Pods-AlamoFuzi.tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		61542943B8E339372403323E /* Pods-AlamoFuzi-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi-watchOS/Pods-AlamoFuzi-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		63392979E6C72C26FC750C88 /* Pods-AlamoFuzi-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi-watchOS/Pods-AlamoFuzi-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7F04E1E167F79938B6EA53BC /* Pods_AlamoFuzi_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamoFuzi_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		819B7793021CFA56AFC5ABA1 /* Pods-AlamoFuzi-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi-tvOS/Pods-AlamoFuzi-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		83CA3D91200939E43BEBCBE6 /* Pods_AlamoFuzi_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamoFuzi_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		851F2D1E6850D61566E604FC /* Pods-AlamoFuzi-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi-OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi-OSX/Pods-AlamoFuzi-OSX.debug.xcconfig"; sourceTree = "<group>"; };
 		896395CC1D992BB700BAF923 /* AlamoFuzi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamoFuzi.swift; sourceTree = "<group>"; };
 		8963960F1D99C98200BAF923 /* AlamoFuzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamoFuzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8963961E1D99C9D500BAF923 /* AlamoFuzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamoFuzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,9 +40,9 @@
 		89EADA361D948DFD00D6D8CB /* AlamoFuzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamoFuzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89EADA391D948DFD00D6D8CB /* AlamoFuzi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlamoFuzi.h; sourceTree = "<group>"; };
 		89EADA3A1D948DFD00D6D8CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98B0DEAEE6F21ED65EA1613A /* Pods-AlamoFuzi.iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi.iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi.iOS/Pods-AlamoFuzi.iOS.release.xcconfig"; sourceTree = "<group>"; };
-		A74493A7FA0210D350CE5A3F /* Pods-AlamoFuzi.tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi.tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi.tvOS/Pods-AlamoFuzi.tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		E871C152E2A6D148FA1D13FC /* Pods-AlamoFuzi.macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi.macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi.macOS/Pods-AlamoFuzi.macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C88BFBC148424B456C338C4B /* Pods-AlamoFuzi-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi-iOS/Pods-AlamoFuzi-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E2B9812642EA7329607338C6 /* Pods-AlamoFuzi-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFuzi-OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFuzi-OSX/Pods-AlamoFuzi-OSX.release.xcconfig"; sourceTree = "<group>"; };
+		E84E2AFA7D9CD4B79E5E8938 /* Pods_AlamoFuzi_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamoFuzi_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34A13450DD2D7ADF1DE6997F /* Pods_AlamoFuzi_macOS.framework in Frameworks */,
+				41262B48EAA53FD3A3DAF230 /* Pods_AlamoFuzi_OSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,14 +85,14 @@
 		4071A746D9AA457E1E927151 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				206E7BDBA9ACFFD607AF0B63 /* Pods-AlamoFuzi.iOS.debug.xcconfig */,
-				98B0DEAEE6F21ED65EA1613A /* Pods-AlamoFuzi.iOS.release.xcconfig */,
-				E871C152E2A6D148FA1D13FC /* Pods-AlamoFuzi.macOS.debug.xcconfig */,
-				0215AFCD35D87169A3087FB9 /* Pods-AlamoFuzi.macOS.release.xcconfig */,
-				5E99160D0F493A78EFC5C566 /* Pods-AlamoFuzi.tvOS.debug.xcconfig */,
-				A74493A7FA0210D350CE5A3F /* Pods-AlamoFuzi.tvOS.release.xcconfig */,
-				24BB5C36E18D9354D2E3542B /* Pods-AlamoFuzi.watchOS.debug.xcconfig */,
-				3FB59CD2209E337250613B6F /* Pods-AlamoFuzi.watchOS.release.xcconfig */,
+				851F2D1E6850D61566E604FC /* Pods-AlamoFuzi-OSX.debug.xcconfig */,
+				E2B9812642EA7329607338C6 /* Pods-AlamoFuzi-OSX.release.xcconfig */,
+				C88BFBC148424B456C338C4B /* Pods-AlamoFuzi-iOS.debug.xcconfig */,
+				5E879FC38F710FE6FE193160 /* Pods-AlamoFuzi-iOS.release.xcconfig */,
+				819B7793021CFA56AFC5ABA1 /* Pods-AlamoFuzi-tvOS.debug.xcconfig */,
+				0CC0FF27168B2D741C162640 /* Pods-AlamoFuzi-tvOS.release.xcconfig */,
+				63392979E6C72C26FC750C88 /* Pods-AlamoFuzi-watchOS.debug.xcconfig */,
+				61542943B8E339372403323E /* Pods-AlamoFuzi-watchOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 				5E90DC9EC65F9966AA1FAAD2 /* Pods_AlamoFuzi_macOS.framework */,
 				7F04E1E167F79938B6EA53BC /* Pods_AlamoFuzi_tvOS.framework */,
 				83CA3D91200939E43BEBCBE6 /* Pods_AlamoFuzi_watchOS.framework */,
+				E84E2AFA7D9CD4B79E5E8938 /* Pods_AlamoFuzi_OSX.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -334,7 +338,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlamoFuzi.iOS/Pods-AlamoFuzi.iOS-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlamoFuzi-iOS/Pods-AlamoFuzi-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		896396031D99C98200BAF923 /* [CP] Check Pods Manifest.lock */ = {
@@ -364,7 +368,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlamoFuzi.macOS/Pods-AlamoFuzi.macOS-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlamoFuzi-OSX/Pods-AlamoFuzi-OSX-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		896396121D99C9D500BAF923 /* [CP] Check Pods Manifest.lock */ = {
@@ -394,7 +398,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlamoFuzi.watchOS/Pods-AlamoFuzi.watchOS-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlamoFuzi-watchOS/Pods-AlamoFuzi-watchOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		896396211D99C9FF00BAF923 /* [CP] Check Pods Manifest.lock */ = {
@@ -424,7 +428,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlamoFuzi.tvOS/Pods-AlamoFuzi.tvOS-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlamoFuzi-tvOS/Pods-AlamoFuzi-tvOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FE90083A7537BC5A9CB386C1 /* [CP] Check Pods Manifest.lock */ = {
@@ -482,7 +486,7 @@
 /* Begin XCBuildConfiguration section */
 		8963960D1D99C98200BAF923 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E871C152E2A6D148FA1D13FC /* Pods-AlamoFuzi.macOS.debug.xcconfig */;
+			baseConfigurationReference = 851F2D1E6850D61566E604FC /* Pods-AlamoFuzi-OSX.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -503,7 +507,7 @@
 		};
 		8963960E1D99C98200BAF923 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0215AFCD35D87169A3087FB9 /* Pods-AlamoFuzi.macOS.release.xcconfig */;
+			baseConfigurationReference = E2B9812642EA7329607338C6 /* Pods-AlamoFuzi-OSX.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -523,7 +527,7 @@
 		};
 		8963961C1D99C9D500BAF923 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24BB5C36E18D9354D2E3542B /* Pods-AlamoFuzi.watchOS.debug.xcconfig */;
+			baseConfigurationReference = 63392979E6C72C26FC750C88 /* Pods-AlamoFuzi-watchOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -544,7 +548,7 @@
 		};
 		8963961D1D99C9D500BAF923 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FB59CD2209E337250613B6F /* Pods-AlamoFuzi.watchOS.release.xcconfig */;
+			baseConfigurationReference = 61542943B8E339372403323E /* Pods-AlamoFuzi-watchOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -564,7 +568,7 @@
 		};
 		8963962B1D99C9FF00BAF923 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E99160D0F493A78EFC5C566 /* Pods-AlamoFuzi.tvOS.debug.xcconfig */;
+			baseConfigurationReference = 819B7793021CFA56AFC5ABA1 /* Pods-AlamoFuzi-tvOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -585,7 +589,7 @@
 		};
 		8963962C1D99C9FF00BAF923 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A74493A7FA0210D350CE5A3F /* Pods-AlamoFuzi.tvOS.release.xcconfig */;
+			baseConfigurationReference = 0CC0FF27168B2D741C162640 /* Pods-AlamoFuzi-tvOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -718,7 +722,7 @@
 		};
 		89EADA3F1D948DFD00D6D8CB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 206E7BDBA9ACFFD607AF0B63 /* Pods-AlamoFuzi.iOS.debug.xcconfig */;
+			baseConfigurationReference = C88BFBC148424B456C338C4B /* Pods-AlamoFuzi-iOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -740,7 +744,7 @@
 		};
 		89EADA401D948DFD00D6D8CB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98B0DEAEE6F21ED65EA1613A /* Pods-AlamoFuzi.iOS.release.xcconfig */;
+			baseConfigurationReference = 5E879FC38F710FE6FE193160 /* Pods-AlamoFuzi-iOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
