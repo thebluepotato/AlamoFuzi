@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "AlamoFuzi"
-    s.version      = "1.0.1"
+    s.version      = "1.0.2"
     s.summary      = "XML/HTML response handlers for Alamofire using Fuzi"
     s.homepage     = "https://github.com/thebluepotato/AlamoFuzi"
     s.license      = "MIT"
