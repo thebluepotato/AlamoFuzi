@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AlamoFuzi.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Alamofire-OSX.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -64,6 +69,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-AlamoFuziTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -73,6 +83,11 @@
 			<true/>
 		</dict>
 		<key>13B699101F29BA37BCD30D71BAFC52BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1B8BED173A4D1CFF89E2718701E65BA6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,7 +107,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>52CB805313B3A9D14677D0E38CC169E9</key>
+		<key>6273B7D850AE9BC908422F04B1190E0D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -118,6 +133,11 @@
 			<true/>
 		</dict>
 		<key>8A46F3686C46DC9D9C11D7DE4BDDBB54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A6D002764CAD73CC6647887E4075CDB4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
