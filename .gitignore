@@ -1,0 +1,7 @@
+*.xcuserstate
+Pods/
+Sources/
+build/
+*.xc*
+Podfile*
+*.swift
