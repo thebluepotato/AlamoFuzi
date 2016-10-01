@@ -24,9 +24,9 @@ before_install:
 script:
   - set -o pipefail
   - if [ $RUN_TESTS == "YES" ]; then
-      xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES test | xcpretty;
+      xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES test;
     else
-      xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO build | xcpretty;
+      xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" ONLY_ACTIVE_ARCH=NO build | xcpretty;
     fi
   - if [ $POD_LINT == "YES" ]; then
       pod lib lint;
