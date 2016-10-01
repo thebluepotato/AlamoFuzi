@@ -40,3 +40,6 @@ Carthage/Build
 
 # CocoaPods
 *.lock
+
+# As long as Fuzi doesn’t support SwiftPM
+Package.swift
