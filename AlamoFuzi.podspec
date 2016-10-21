@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
     s.name         = "AlamoFuzi"
-    s.version      = "1.0.2"
+    s.version      = "1.0.3"
     s.summary      = "XML/HTML response handlers for Alamofire using Fuzi"
     s.homepage     = "https://github.com/thebluepotato/AlamoFuzi"
     s.license      = "MIT"
     s.author       = { "Jonas Zaugg" => "jonas.zaugg@yahoo.com" }
     s.source       = { :git => "https://github.com/thebluepotato/AlamoFuzi.git", :tag => s.version }
-    s.documentation_url = 'http://thebluepotato.github.io/AlamoFuzi'
+    # s.documentation_url = 'http://thebluepotato.github.io/AlamoFuzi'
 
     s.ios.deployment_target = "9.0"
     s.osx.deployment_target = "10.11"
