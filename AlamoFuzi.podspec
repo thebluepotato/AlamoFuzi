@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
     s.source       = { :git => "https://github.com/thebluepotato/AlamoFuzi.git", :tag => s.version }
     # s.documentation_url = 'http://thebluepotato.github.io/AlamoFuzi'
 
-    s.ios.deployment_target = "9.0"
-    s.osx.deployment_target = "10.11"
+    s.ios.deployment_target = "8.0"
+    s.osx.deployment_target = "10.10"
     s.tvos.deployment_target = "9.0"
     s.watchos.deployment_target = "2.0"
     

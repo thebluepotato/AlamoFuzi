@@ -1,14 +1,14 @@
 use_frameworks!
 
 target 'AlamoFuzi-iOS' do
-    platform :ios, '9.0'
+    platform :ios, '8.0'
     
     pod 'Alamofire', '~> 4.0'
     pod 'Fuzi', '~> 1.0'
 end
 
 target 'AlamoFuzi-OSX' do
-    platform :osx, '10.11'
+    platform :osx, '10.10'
     
     pod 'Alamofire', '~> 4.0'
     pod 'Fuzi', '~> 1.0'

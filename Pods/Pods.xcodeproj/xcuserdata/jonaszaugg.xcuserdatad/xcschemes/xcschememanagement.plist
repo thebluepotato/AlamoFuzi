@@ -9,42 +9,52 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Alamofire-OSX.xcscheme</key>
+		<key>Alamofire-OSX10.10.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Alamofire-iOS.xcscheme</key>
+		<key>Alamofire-iOS8.0.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Alamofire-tvOS.xcscheme</key>
+		<key>Alamofire-iOS9.0.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Alamofire-watchOS.xcscheme</key>
+		<key>Alamofire-tvOS9.0.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Fuzi-OSX.xcscheme</key>
+		<key>Alamofire-watchOS2.0.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Fuzi-iOS.xcscheme</key>
+		<key>Fuzi-OSX10.10.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Fuzi-tvOS.xcscheme</key>
+		<key>Fuzi-iOS8.0.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Fuzi-watchOS.xcscheme</key>
+		<key>Fuzi-iOS9.0.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Fuzi-tvOS9.0.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Fuzi-watchOS2.0.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -77,72 +87,82 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>063E3C59C1B7382B70A98D5EF8052B8D</key>
+		<key>1C1A3E697D978E8095E9BF7DB5744730</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>13B699101F29BA37BCD30D71BAFC52BB</key>
+		<key>1D1D5F5E3D32EDBD0ED8FCFC87D9B92C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1B8BED173A4D1CFF89E2718701E65BA6</key>
+		<key>1D8A644148FEAF9B0C4E5A0DA1FB7AD3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>39398112EEF05604210D51C11148472A</key>
+		<key>289BEBE56423793DDE980F90B1CF78A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>49A53913F7425CE8626BE9BBD8FE4353</key>
+		<key>36D4A93C16D3EA5235D4E10152F793FE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>49FF163CC4DF804DB3FA125AC7585C28</key>
+		<key>478705AC161A080B2BEF02CF09DC584A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6273B7D850AE9BC908422F04B1190E0D</key>
+		<key>4D7DC068A4AABF5EA254AFEBC5F5F519</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7A52A8E7F25AE6A46ACD071EFCD9FA85</key>
+		<key>545CEC955AD0ABC1DEDAAAE46BDDFF2E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7BDF9D2C2F51585717DA2B2156C49ABB</key>
+		<key>62C5B3E587F0DEDA3C8576F3C4732264</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8315C8A53A03C511DEE660894C86559A</key>
+		<key>703ED2A46C2800332B96498BEB0A8632</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>89C69EB624EC8137588D9568F2E11964</key>
+		<key>96CF7AE3F6E24E8B2E0C9CF1D4C0CACE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8A46F3686C46DC9D9C11D7DE4BDDBB54</key>
+		<key>B99FAA9BDFDC04F7168A4D5A1BE4A8DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A6D002764CAD73CC6647887E4075CDB4</key>
+		<key>CF0578DE89449D99766E5B48E4303D42</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CFADFB45AC8D847328C8C358A7258920</key>
+		<key>D45A4325DDDF2E3D14C738A785D92F07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA77E872B3E7CC87FD08C0ABF752ED16</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FFB6B90DC8267508A42409EDEC1E5605</key>
 		<dict>
 			<key>primary</key>
 			<true/>

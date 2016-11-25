@@ -1,6 +1,0 @@
-framework module Fuzi {
-  umbrella header "Fuzi-watchOS-umbrella.h"
-
-  export *
-  module * { export * }
-}
