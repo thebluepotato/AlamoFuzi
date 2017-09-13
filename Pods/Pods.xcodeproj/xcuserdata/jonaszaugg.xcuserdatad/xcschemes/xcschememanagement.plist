@@ -9,17 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Alamofire-OSX10.10.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Alamofire-iOS8.0.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Alamofire-iOS9.0.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Alamofire-macOS10.10.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -34,17 +34,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Fuzi-OSX10.10.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Fuzi-iOS8.0.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Fuzi-iOS9.0.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Fuzi-macOS10.10.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -86,87 +86,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>1C1A3E697D978E8095E9BF7DB5744730</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1D1D5F5E3D32EDBD0ED8FCFC87D9B92C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1D8A644148FEAF9B0C4E5A0DA1FB7AD3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>289BEBE56423793DDE980F90B1CF78A7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>36D4A93C16D3EA5235D4E10152F793FE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>478705AC161A080B2BEF02CF09DC584A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4D7DC068A4AABF5EA254AFEBC5F5F519</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>545CEC955AD0ABC1DEDAAAE46BDDFF2E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>62C5B3E587F0DEDA3C8576F3C4732264</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>703ED2A46C2800332B96498BEB0A8632</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>96CF7AE3F6E24E8B2E0C9CF1D4C0CACE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B99FAA9BDFDC04F7168A4D5A1BE4A8DD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CF0578DE89449D99766E5B48E4303D42</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D45A4325DDDF2E3D14C738A785D92F07</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DA77E872B3E7CC87FD08C0ABF752ED16</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FFB6B90DC8267508A42409EDEC1E5605</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
