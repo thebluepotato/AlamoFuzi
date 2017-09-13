@@ -122,15 +122,15 @@ $ carthage update
 2. `Build Settings`で`Search Paths`の`Header Search Paths`に`$(SDKROOT)/usr/include/libxml2`を追加してください。
 
 
-##用例
-###XML
+## 用例
+### XML
 ```swift
 import Fuzi
 
 let xml = "..."
 do {
   // if encoding is omitted, it defaults to NSUTF8StringEncoding
-  let doc = try XMLDocument(string: html, encoding: NSUTF8StringEncoding)
+  let document = try XMLDocument(string: html, encoding: NSUTF8StringEncoding)
   if let root = document.root {
     print(root.tag)
     
@@ -155,7 +155,7 @@ do {
   }
 }
 ```
-###HTML
+### HTML
 `HTMLDocument` は `XMLDocument` サブクラス。
 
 ```swift
@@ -198,7 +198,7 @@ do {
 }
 ```
 
-###エラー処理なんて、どうでもいい場合
+### エラー処理なんて、どうでもいい場合
 
 ```swift
 import Fuzi
@@ -217,7 +217,7 @@ let doc2 = try! HTMLDocument(string: html)
 //...
 ```
 
-###テキストノードを取得したい
+### テキストノードを取得したい
 テキストノードだけではなく、全種類のノードは取得可能。
 
 ```swift

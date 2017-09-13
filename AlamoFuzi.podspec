@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "AlamoFuzi"
-    s.version      = "1.0.4"
+    s.version      = "2.0.0"
     s.summary      = "XML/HTML response handlers for Alamofire using Fuzi"
     s.homepage     = "https://github.com/thebluepotato/AlamoFuzi"
     s.license      = "MIT"
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
     
     s.source_files = "Sources/*.swift"
     s.dependency     "Alamofire", "~> 4.0"
-    s.dependency     "Fuzi", "~> 1.0"
+    s.dependency     "Fuzi", "~> 2.0"
 
     # Required for linting
     s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }

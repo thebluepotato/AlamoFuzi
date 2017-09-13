@@ -280,7 +280,7 @@ internal func XPath(fromCSS css: String) -> String {
 
         if let symbolRange = token.rangeOfCharacter(from: CharacterSet(charactersIn: "#.[]")) {
           let symbol = symbolRange.lowerBound == token.startIndex ?"*" :""
-          var xpathComponent = token.substring(to: symbolRange.lowerBound)
+          var xpathComponent = String(token[..<symbolRange.lowerBound])
           let nsrange = NSRange(location: 0, length: token.utf16.count)
           
           if let result = RegexConstants.idRegex.firstMatch(in: token, options: [], range: nsrange), result.numberOfRanges > 1 {
