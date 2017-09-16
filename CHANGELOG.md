@@ -1,5 +1,9 @@
 # Change Log
 
+## [2.0.0](https://github.com/thebluepotato/AlamoFuzi/tree/2.0.0) (2017-09-16)
+[Full Changelog](https://github.com/thebluepotato/AlamoFuzi/compare/1.0.4...2.0.0)
+- Update for Swift 4, Xcode 9 and Fuzi 2.0.
+
 ## [1.0.4](https://github.com/thebluepotato/AlamoFuzi/tree/1.0.4) (2016-11-26)
 [Full Changelog](https://github.com/thebluepotato/AlamoFuzi/compare/1.0.3...1.0.4)
 - Reverted back to iOS 8.0 and macOS 10.10 following Alamofire's [decision](https://github.com/Alamofire/Alamofire/pull/1774) to do the same.
