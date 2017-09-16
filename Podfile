@@ -2,7 +2,7 @@ use_frameworks!
 
 def common_pods
     pod 'Alamofire', '~> 4.0'
-    pod 'Fuzi', :git => 'https://github.com/cezheng/Fuzi.git', :branch => 'master' # '~> 2.0'
+    pod 'Fuzi', '~> 2.0'
 end
 
 target 'AlamoFuzi-iOS' do
@@ -27,5 +27,5 @@ end
 
 target 'AlamoFuziTests' do
     platform :ios, '9.0'
-    pod 'AlamoFuzi', :git => 'https://github.com/thebluepotato/AlamoFuzi.git', :branch => 'master'
+    pod 'AlamoFuzi'
 end
