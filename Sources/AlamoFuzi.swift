@@ -28,12 +28,62 @@ import Fuzi
 
 // MARK: - Fuzi HTML
 
+public final class HTMLResponseSerializer: ResponseSerializer {
+    public func serialize(request: URLRequest?, response: HTTPURLResponse?, data: Data?, error: Error?) throws -> HTMLDocument {
+        // Pass through any underlying URLSession error to the .network case.
+        guard error == nil else { throw error! }
+        
+        // Use Alamofire's existing data serializer to extract the data, passing the error as nil, as it has
+        // already been handled.
+        guard let data = data, !data.isEmpty else {
+            guard emptyResponseAllowed(forRequest: request, response: response) else {
+                throw AFError.responseSerializationFailed(reason: .inputDataNilOrZeroLength)
+            }
+            
+            return try HTMLDocument(string: "")
+        }
+        
+        //do {
+        return try HTMLDocument(data: data)
+        /*} catch {
+         throw AFError.responseSerializationFailed(reason: .decodingFailed(error: error))
+         }
+         
+         return document*/
+    }
+}
+
+public final class XMLResponseSerializer: ResponseSerializer {
+    public func serialize(request: URLRequest?, response: HTTPURLResponse?, data: Data?, error: Error?) throws -> XMLDocument {
+        // Pass through any underlying URLSession error to the .network case.
+        guard error == nil else { throw error! }
+        
+        // Use Alamofire's existing data serializer to extract the data, passing the error as nil, as it has
+        // already been handled.
+        guard let data = data, !data.isEmpty else {
+            guard emptyResponseAllowed(forRequest: request, response: response) else {
+                throw AFError.responseSerializationFailed(reason: .inputDataNilOrZeroLength)
+            }
+            
+            return try XMLDocument(string: "")
+        }
+        
+        //do {
+        return try XMLDocument(data: data)
+        /*} catch {
+         throw AFError.responseSerializationFailed(reason: .decodingFailed(error: error))
+         }
+         
+         return document*/
+    }
+}
+
 extension DataRequest {
     
     /// Creates a response serializer that returns a result HTML document type initialized from the response data
     ///
     /// - returns: An HTML document response serializer
-    static func htmlResponseSerializer() -> DataResponseSerializer<HTMLDocument> {
+    /*static func htmlResponseSerializer() -> DataResponseSerializer<HTMLDocument> {
         return DataResponseSerializer { request, response, data, error in
             // Pass through any underlying URLSession error to the .network case.
             guard error == nil else { return .failure(AlamoFuziError.network(error: error!)) }
@@ -53,7 +103,7 @@ extension DataRequest {
                 return .failure(AlamoFuziError.htmlSerialization(error: error as! XMLError))
             }
         }
-    }
+    }*/
     
     /// Adds a handler to be called once the request has finished.
     ///
@@ -61,16 +111,11 @@ extension DataRequest {
     ///
     /// - returns: The request.
     @discardableResult
-    public func responseHTML(
-        queue: DispatchQueue? = nil,
-        completionHandler: @escaping (DataResponse<HTMLDocument>) -> Void)
-        -> Self
-    {
-        return response(
-            queue: queue,
-            responseSerializer: DataRequest.htmlResponseSerializer(),
-            completionHandler: completionHandler
-        )
+    public func responseHTML(queue: DispatchQueue = .main,
+                             completionHandler: @escaping (DataResponse<HTMLDocument>) -> Void) -> Self {
+        return response(queue: queue,
+                        responseSerializer: HTMLResponseSerializer(),
+                        completionHandler: completionHandler)
     }
 }
 
@@ -78,7 +123,7 @@ extension DataRequest {
 
 extension DataRequest {
     
-    /// Creates a response serializer that returns a result XML document type initialized from the response data
+    /*// Creates a response serializer that returns a result XML document type initialized from the response data
     ///
     /// - returns: An XML document response serializer
     static func xmlResponseSerializer() -> DataResponseSerializer<Fuzi.XMLDocument> {
@@ -101,7 +146,7 @@ extension DataRequest {
                 return .failure(AlamoFuziError.xmlSerialization(error: error as! XMLError))
             }
         }
-    }
+    }*/
     
     /// Adds a handler to be called once the request has finished.
     ///
@@ -109,16 +154,11 @@ extension DataRequest {
     ///
     /// - returns: The request.
     @discardableResult
-    public func responseXML(
-        queue: DispatchQueue? = nil,
-        completionHandler: @escaping (DataResponse<Fuzi.XMLDocument>) -> Void)
-        -> Self
-    {
-        return response(
-            queue: queue,
-            responseSerializer: DataRequest.xmlResponseSerializer(),
-            completionHandler: completionHandler
-        )
+    public func responseXML(queue: DispatchQueue = .main,
+                             completionHandler: @escaping (DataResponse<XMLDocument>) -> Void) -> Self {
+        return response(queue: queue,
+                        responseSerializer: XMLResponseSerializer(),
+                        completionHandler: completionHandler)
     }
 }
 
