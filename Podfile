@@ -27,5 +27,5 @@ end
 
 target 'AlamoFuziTests' do
     platform :ios, '10.0'
-    #pod 'AlamoFuzi'
+    pod 'AlamoFuzi'
 end

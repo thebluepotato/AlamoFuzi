@@ -27,15 +27,15 @@ class AlamoFuziTests: XCTestCase {
         let expectation = self.expectation(description: "Request should succeed")
         var response: DataResponse<HTMLDocument>!
         
-        Alamofire.request("https://httpbin.org").responseHTML { resp in
+        AF.request("https://httpbin.org").responseHTML { resp in
             response = resp
             expectation.fulfill()
         }
         
         waitForExpectations(timeout: timeout, handler: nil)
         
-        XCTAssertTrue(response.result.isSuccess, "Request for example HTML page failed with error : \(response.result.error!)")
-        let html = response.result.value
+        XCTAssertNoThrow(try response.result.get(), "Request for example HTML page failed with error : \(response.result.mapError{$0})")
+        let html = try? response.result.get()
         XCTAssertNotNil(html, "Response result value is nil.")
         let tag = html?.firstChild(css: ".mp > h1")?.stringValue
         XCTAssertNotNil(tag, "The example HTML file does not have the expected structure.")
@@ -46,15 +46,15 @@ class AlamoFuziTests: XCTestCase {
         let expectation = self.expectation(description: "Request should succeed")
         var response: DataResponse<XMLDocument>!
         
-        Alamofire.request("http://www.xmlfiles.com/examples/simple.xml").responseXML { resp in
+        AF.request("http://www.xmlfiles.com/examples/simple.xml").responseXML { resp in
             response = resp
             expectation.fulfill()
         }
         
         waitForExpectations(timeout: timeout, handler: nil)
         
-        XCTAssertTrue(response.result.isSuccess, "Request for example XML page failed with error : \(response.result.error!)")
-        let xml = response.result.value
+        XCTAssertNoThrow(try response.result.get(), "Request for example XML page failed with error : \(response.result.mapError{$0})")
+        let xml = try? response.result.get()
         XCTAssertNotNil(xml, "Response result value is nil.")
         let tag = xml?.firstChild(xpath: "//food/name")?.stringValue
         XCTAssertNotNil(tag, "The example XML file does not have the expected structure.")
