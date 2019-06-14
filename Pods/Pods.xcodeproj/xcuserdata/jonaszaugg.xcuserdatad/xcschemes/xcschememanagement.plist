@@ -9,52 +9,42 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Alamofire-iOS8.0.xcscheme</key>
+		<key>Alamofire-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Alamofire-iOS9.0.xcscheme</key>
+		<key>Alamofire-macOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Alamofire-macOS10.10.xcscheme</key>
+		<key>Alamofire-tvOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Alamofire-tvOS9.0.xcscheme</key>
+		<key>Alamofire-watchOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Alamofire-watchOS2.0.xcscheme</key>
+		<key>Fuzi-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Fuzi-iOS8.0.xcscheme</key>
+		<key>Fuzi-macOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Fuzi-iOS9.0.xcscheme</key>
+		<key>Fuzi-tvOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Fuzi-macOS10.10.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Fuzi-tvOS9.0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Fuzi-watchOS2.0.xcscheme</key>
+		<key>Fuzi-watchOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
