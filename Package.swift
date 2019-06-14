@@ -1,4 +1,4 @@
-// swift-tools-version: 5.1
+// swift-tools-version:5.1
 
 import PackageDescription
 let package = Package(
@@ -12,7 +12,7 @@ let package = Package(
                    .package(url: "https://github.com/cezheng/Fuzi.git", from: "2.0.0")],
     targets: [
         .target(
-            name: "AlamoFuzi", path: "Sources", dependencies: ["Alamofire", "Fuzi"])
-            .testTarget(name: "AlamoFuziTests", path: "Tests")
+            name: "AlamoFuzi", dependencies: ["Alamofire", "Fuzi"], path: "Sources"),
+        .testTarget(name: "AlamoFuziTests", path: "Tests")
     ]
 )
