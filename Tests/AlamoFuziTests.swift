@@ -1,13 +1,5 @@
-//
-//  AlamoFuziTests.swift
-//  AlamoFuziTests
-//
-//  Created by Jonas Zaugg on 01.10.16.
-//  Copyright © 2016 Jonas Zaugg. All rights reserved.
-//
-
 import XCTest
-import AlamoFuzi
+@testable import AlamoFuzi
 import Alamofire
 import Fuzi
 
@@ -23,42 +15,42 @@ class AlamoFuziTests: XCTestCase {
         super.tearDown()
     }
     
-    func testHTMLResponse() {
+    func testHTMLResponse() throws {
         let expectation = self.expectation(description: "Request should succeed")
         var response: DataResponse<HTMLDocument>!
         
-        AF.request("https://example.org").responseHTML { resp in
+        AF.request("http://example.org").responseHTML { resp in
             response = resp
             expectation.fulfill()
         }
         
         waitForExpectations(timeout: timeout, handler: nil)
         
-        XCTAssertNoThrow(try response.result.get(), "Request for example HTML page failed with error : \(response.result.mapError{$0})")
-        let html = try? response.result.get()
-        XCTAssertNotNil(html, "Response result value is nil.")
-        let tag = html?.firstChild(css: "div > h1")?.stringValue
-        XCTAssertNotNil(tag, "The example HTML file does not have the expected structure.")
-        XCTAssertEqual(tag, "Example Domain", "The HTML did not have the expected content")
+        XCTAssertNil(response.error, "Request for example HTML page failed with error: \(response.error!)")
+        
+        let html = try XCTUnwrap(response.value, "Response result value is nil.")
+        
+        let tag = try XCTUnwrap(html.firstChild(css: "div > p")?.stringValue, "The example HTML file does not have the expected structure.")
+        
+        XCTAssertEqual(tag, "This domain is established to be used for illustrative examples in documents. You may use this\n    domain in examples without prior coordination or asking for permission.", "The HTML did not have the expected content")
     }
     
-    func testXMLResponse() {
+    func testXMLResponse() throws {
         let expectation = self.expectation(description: "Request should succeed")
         var response: DataResponse<XMLDocument>!
-        
-        AF.request("https://www.w3schools.com/xml/simple.xml").responseXML { resp in
+        AF.request("https://www.w3schools.com/xml/note.xml").responseXML { resp in
             response = resp
             expectation.fulfill()
         }
         
         waitForExpectations(timeout: timeout, handler: nil)
         
-        XCTAssertNoThrow(try response.result.get(), "Request for example XML page failed with error : \(response.result.mapError{$0})")
-        let xml = try? response.result.get()
-        XCTAssertNotNil(xml, "Response result value is nil.")
-        debugPrint(xml!)
-        let tag = xml?.firstChild(xpath: "//food/name")?.stringValue
-        XCTAssertNotNil(tag, "The example XML file does not have the expected structure.")
-        XCTAssertEqual(tag, "Belgian Waffles", "The XML did not have the expected content.")
+        XCTAssertNil(response.error, "Request for example XML page failed with error: \(response.error!)")
+        
+        let xml = try XCTUnwrap(response.value, "Response result value is nil.")
+        
+        let tag = try XCTUnwrap(try xml.firstChild(xpath: "//note/from")?.stringValue, "The example XML file does not have the expected structure.")
+        
+        XCTAssertEqual(tag, "Jani", "The HTML did not have the expected content")
     }
 }
