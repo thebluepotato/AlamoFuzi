@@ -28,5 +28,5 @@ end
 target 'AlamoFuziTests' do
     platform :ios, '10.0'
     #pod 'AlamoFuzi'
-    pod 'AlamoFuzi', :git => 'https://github.com/thebluepotato/AlamoFuzi.git', :branch => 'swift5'
+    pod 'AlamoFuzi', :git => 'https://github.com/thebluepotato/AlamoFuzi.git', :branch => 'master'
 end
