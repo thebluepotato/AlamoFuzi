@@ -49,7 +49,7 @@ class AlamoFuziTests: XCTestCase {
         
         let xml = try XCTUnwrap(response.value, "Response result value is nil.")
         
-        let tag = try XCTUnwrap(try xml.firstChild(xpath: "//note/from")?.stringValue, "The example XML file does not have the expected structure.")
+        let tag = try XCTUnwrap(xml.firstChild(xpath: "//note/from")?.stringValue, "The example XML file does not have the expected structure.")
         
         XCTAssertEqual(tag, "Jani", "The HTML did not have the expected content")
     }
