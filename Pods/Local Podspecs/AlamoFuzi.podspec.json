@@ -29,5 +29,6 @@
   "swift_versions": "5.0",
   "xcconfig": {
     "HEADER_SEARCH_PATHS": "$(SDKROOT)/usr/include/libxml2"
-  }
+  },
+  "swift_version": "5.0"
 }
