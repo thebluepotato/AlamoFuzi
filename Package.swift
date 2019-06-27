@@ -18,7 +18,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire", from: "5.0.0-beta.1"),
-        .package(url: "https://github.com/cezheng/Fuzi", .branch("master"))
+        .package(url: "https://github.com/cezheng/Fuzi", from: "3.1.1")
     ],
     targets: [
         .target(
