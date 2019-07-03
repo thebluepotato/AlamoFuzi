@@ -24,9 +24,9 @@ let package = Package(
         .target(
             name: "AlamoFuzi",
             dependencies: ["Alamofire", "Fuzi"],
-            path: "Sources",
+            path: "Sources"//,
             // Required for building Fuzi
-            cSettings: [.headerSearchPath("$(SDKROOT)/usr/include/libxml2")]
+            //cSettings: [.headerSearchPath("$(SDKROOT)/usr/include/libxml2")]
         ),
         .testTarget(
             name: "AlamoFuziTests",
