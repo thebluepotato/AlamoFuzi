@@ -17,7 +17,7 @@ class AlamoFuziTests: XCTestCase {
     
     func testHTMLResponse() throws {
         let expectation = self.expectation(description: "Request should succeed")
-        var response: DataResponse<HTMLDocument>!
+        var response: AFDataResponse<HTMLDocument>!
         
         AF.request("http://example.org").responseHTML { resp in
             response = resp
@@ -31,9 +31,9 @@ class AlamoFuziTests: XCTestCase {
         #if swift(>=5.1) // For XCTUnwrap
         let html = try XCTUnwrap(response.value, "Response result value is nil.")
         
-        let tag = try XCTUnwrap(html.firstChild(css: "div > p")?.stringValue, "The example HTML file does not have the expected structure.")
+        let tag = try XCTUnwrap(html.firstChild(css: "div > h1")?.stringValue, "The example HTML file does not have the expected structure.")
         
-        XCTAssertEqual(tag, "This domain is established to be used for illustrative examples in documents. You may use this\n    domain in examples without prior coordination or asking for permission.", "The HTML did not have the expected content")
+        XCTAssertEqual(tag, "Example Domain", "The HTML did not have the expected content")
         
         #else
         let html = response.value
@@ -48,7 +48,7 @@ class AlamoFuziTests: XCTestCase {
     
     func testXMLResponse() throws {
         let expectation = self.expectation(description: "Request should succeed")
-        var response: DataResponse<XMLDocument>!
+        var response: AFDataResponse<XMLDocument>!
         AF.request("https://www.w3schools.com/xml/note.xml").responseXML { resp in
             response = resp
             expectation.fulfill()

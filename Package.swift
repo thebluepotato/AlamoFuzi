@@ -17,16 +17,14 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire", from: "5.0.0-beta.1"),
-        .package(url: "https://github.com/cezheng/Fuzi", from: "3.1.1")
+        .package(url: "https://github.com/Alamofire/Alamofire", from: "5.0.0"),
+        .package(url: "https://github.com/cezheng/Fuzi", .revision("376905f17169b335ebed87f05bba55e77051d985"))//from: "3.1.2")
     ],
     targets: [
         .target(
             name: "AlamoFuzi",
             dependencies: ["Alamofire", "Fuzi"],
-            path: "Sources"//,
-            // Required for building Fuzi
-            //cSettings: [.headerSearchPath("$(SDKROOT)/usr/include/libxml2")]
+            path: "Sources" 
         ),
         .testTarget(
             name: "AlamoFuziTests",
